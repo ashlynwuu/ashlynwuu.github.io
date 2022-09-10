@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Harmattan', sans-serif;
+    background-color: #EEE2D9;
+}
+
+header {
+    display: flex;
+    width: 92%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo-container,
+.nav-links {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 5px;
+    background-image: linear-gradient(to bottom right, #88a2ff, #685ee9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    flex: 1.5;
+}
+
+.nav-links {
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 300px;
+}
+
+.nav-link {
+    color: #405A56;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #D49065;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-link:active {
+    color: #D49065;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.clicked {
+    color: #D49065;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+    margin-left: 150px;
+}
+
+.intro-text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    background-color: #405A56;
+    margin-bottom: 10px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text h2 {
+    font-size: 50px;
+    font-weight: 600;
+    background-color: #50897B;
+    margin-top: 10px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    font-size: 50px;
+    font-weight: 600;
+    color: #50897B;
+    position: relative;
+}
+
+.dynamic-txts li {
+    position: relative;
+}
+
+.dynamic-txts li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #50897B;
+    animation: typing 5s steps(17)
+    infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px)
+    }
+    100% {
+        left: 0;
+    }
+}
+
