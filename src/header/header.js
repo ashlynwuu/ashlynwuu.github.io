@@ -12,15 +12,15 @@ const Header = () => {
       </div>
       <nav className="menu">
         <ul>
-          <li><a href="/" class="circle-word">home</a></li>
-          <li><a href="/about-me" class="circle-word">about me</a></li>
-          <li><a href="/experiences" class="circle-word">experiences</a></li>
+          <li><a href="#/" class="circle-word">home</a></li>
+          <li><a href="#/about-me" class="circle-word">about me</a></li>
+          <li><a href="#/experiences" class="circle-word">experiences</a></li>
           <li>
             <a href={resume}
-               target="_blank" 
-               rel="noopener noreferrer" 
-               className="circle-word">
-               resume
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="circle-word">
+            resume
             </a>
           </li>
         </ul>
