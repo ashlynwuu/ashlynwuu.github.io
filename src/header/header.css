@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #F9F6F6;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu ul li {
+    margin-left: 40px;
+  }
+  
+  .menu ul li a {
+    font-family: "Lusitana", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2F2F2F;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+    color: #D85384;
+  }
+  
+  @media (max-width: 768px) {
+    .menu ul {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-style {
+      padding: 10px 20px;
+    }
+  
+    .logo img {
+      height: 40px;
+    }
+  }
+  
+  .circle-word {
+    position: relative;
+    display: inline-block;
+    color: #2F2F2F;
+    transition: color 0.2s ease;
+  }
+  
+  .circle-word::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    background-image: url('../circle-graphic.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease, color 0.2s ease;
+  }
+  
+  .circle-word:hover {
+    color: #D85384;
+  }
+  
+  .circle-word:hover::after {
+    width: 250px;
+    height: 70px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
