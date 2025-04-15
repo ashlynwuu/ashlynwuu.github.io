@@ -1,6 +1,6 @@
 import './header.css';
-import logo from '../heart-graphic.png'; 
-import resume from '../resume.pdf';
+import logo from '../assets/heart-graphic.png'; 
+import resume from '../assets/resume.pdf';
 
 const Header = () => {
   return (

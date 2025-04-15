@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './header/header.js'
 import Footer from './footer/footer.js';
-import me from './me.png'; 
+import me from './assets/me.png'; 
 import React, { useState, useEffect } from 'react';
 
 function AboutMe() {

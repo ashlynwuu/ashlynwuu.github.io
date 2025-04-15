@@ -1,5 +1,5 @@
-import bow from './bow-graphic.png';
-import heart from './heart-graphic.png'
+import bow from './assets/bow-graphic.png';
+import heart from './assets/heart-graphic.png'
 import './App.css';
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect, useRef } from 'react';

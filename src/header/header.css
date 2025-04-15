@@ -67,6 +67,7 @@
     display: inline-block;
     color: #2F2F2F;
     transition: color 0.2s ease;
+    z-index: 1;
   }
   
   .circle-word::after {
@@ -76,12 +77,13 @@
     top: 50%;
     width: 0;
     height: 0;
-    background-image: url('../circle-graphic.png');
+    background-image: url('../assets/circle-graphic.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease, color 0.2s ease;
+    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+    z-index: 1;
   }
   
   .circle-word:hover {
@@ -89,8 +91,7 @@
   }
   
   .circle-word:hover::after {
-    width: 250px;
-    height: 70px;
+    width: 200%;
+    height: 190%;
     transform: translate(-50%, -50%) scale(1);
   }
-  
